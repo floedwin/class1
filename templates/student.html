@@ -1,0 +1,63 @@
+{%extends 'base.html'%}
+{% load staticfiles%}
+{% block content%}
+
+<title> Student </title>
+<body>
+
+
+<div class="cointainer">
+    <div class="content mt-3">
+            <div class="animated fadeIn">
+                <div class="row">
+
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <strong class="card-title">Register student</strong>
+                        </div>
+                        <div class="card-body">
+                  <table id="bootstrap-data-table" class="table table-striped table-bordered">
+      <tr>
+           <th>Student number</th>
+        <th>Student name</th>
+        <th>Gender</th>
+        <th>Age</th>
+    </tr>
+    </thead>
+    <tbody>
+<tr>
+            <h1> Register student </h1>
+    {% for student in students %}
+    <h1>{{customer.customer}}</h1>
+    <td> {{student.student_number}}</td>
+    <td>{{student.student_name}}</td>
+    <td> {{student.gender}}</td>
+    <td> {{student.age}}</td>
+
+
+        </tr>
+
+      {% endfor %}
+
+  </table>
+
+
+
+       </div>
+                    </div>
+                </div>
+</div>
+                </div>
+    </div>
+    </div>
+
+</body>
+    {% endblock%}
+
+
+
+
+
+
+
